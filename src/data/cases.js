@@ -2,7 +2,7 @@ export const cases = [
   {
     id: 1,
     client: "FRA学校",
-    description: "映像・音響システム更新",
+    description: "映像・音響システム入れ替え",
     category: "School",
     image: "/images/FRA学校_音響システム更新_1.JPG",
     tags: ["音響", "学校"]
@@ -10,7 +10,7 @@ export const cases = [
   {
     id: 2,
     client: "FRA学校",
-    description: "音響システム更新",
+    description: "映像・音響システム入れ替え",
     category: "School",
     image: "/images/FRA学校_音響システム更新_2.JPG",
     tags: ["音響", "学校"]
