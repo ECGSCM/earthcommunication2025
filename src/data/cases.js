@@ -5,7 +5,7 @@ export const cases = [
     description: "映像・音響システム入れ替え",
     category: "School",
     image: "/images/FRA学校_音響システム更新_1.JPG",
-    tags: ["音響", "学校"]
+    tags: ["映像", "音響", "学校"]
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const cases = [
     description: "映像・音響システム入れ替え",
     category: "School",
     image: "/images/FRA学校_音響システム更新_2.JPG",
-    tags: ["音響", "学校"]
+    tags: ["映像", "音響", "学校"]
   },
   {
     id: 3,
