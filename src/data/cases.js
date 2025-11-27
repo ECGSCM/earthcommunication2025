@@ -106,7 +106,7 @@ export const cases = [
   {
     id: 14,
     client: "水戸結婚式場",
-    description: "音響設備更新",
+    description: "音響設備入れ替え",
     category: "Wedding",
     image: "/images/水戸結婚式場音響設備更新.JPG",
     tags: ["音響", "結婚式場"]
@@ -138,7 +138,7 @@ export const cases = [
   {
     id: 18,
     client: "目黒幼稚園",
-    description: "設備入れ替え",
+    description: "音響設備入れ替え",
     category: "Kindergarten",
     image: "/images/目黒幼稚園設備入れ替え_2.JPG",
     tags: ["音響", "幼稚園"]
