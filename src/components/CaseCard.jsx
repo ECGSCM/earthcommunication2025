@@ -2,10 +2,37 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Tag } from 'lucide-react';
 
+// クライアント名から色を生成する関数
+const getClientColor = (clientName) => {
+    const colors = [
+        '#3b82f6', // blue
+        '#ef4444', // red
+        '#10b981', // green
+        '#f59e0b', // amber
+        '#8b5cf6', // violet
+        '#ec4899', // pink
+        '#06b6d4', // cyan
+        '#f97316', // orange
+    ];
+
+    // クライアント名から一意のインデックスを生成
+    let hash = 0;
+    for (let i = 0; i < clientName.length; i++) {
+        hash = clientName.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return colors[Math.abs(hash) % colors.length];
+};
+
 const CaseCard = ({ caseItem }) => {
+    const borderColor = getClientColor(caseItem.client);
+
     return (
         <motion.div
             className="case-card"
+            style={{
+                borderLeft: `4px solid ${borderColor}`,
+                boxShadow: `0 0 0 1px ${borderColor}20`
+            }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
