@@ -18,10 +18,10 @@ export const cases = [
   {
     id: 3,
     client: "とっとりおかやま物産展",
-    description: "マイクシステム入れ替え",
+    description: "映像・マイクシステム入れ替え",
     category: "Event",
     image: "/images/とっとりおかやま物産展_マイクシステム入れ替え.JPG",
-    tags: ["マイク", "イベント"]
+    tags: ["映像", "マイク", "イベント"]
   },
   {
     id: 4,
