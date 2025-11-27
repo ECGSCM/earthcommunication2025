@@ -90,7 +90,7 @@ export const cases = [
   {
     id: 12,
     client: "横浜ラーメン博物館",
-    description: "音響設備更新",
+    description: "音響設備入れ替え",
     category: "Museum",
     image: "/images/横浜ラーメン博物館_音響設備更新.JPG",
     tags: ["音響", "博物館"]
@@ -98,7 +98,7 @@ export const cases = [
   {
     id: 13,
     client: "横浜ラーメン博物館",
-    description: "音響設備更新",
+    description: "音響設備入れ替え",
     category: "Museum",
     image: "/images/横浜ラーメン博物館_音響設備更新_2.JPG",
     tags: ["音響", "博物館"]
