@@ -23,24 +23,6 @@ const getClientColor = (clientName) => {
     return colors[Math.abs(hash) % colors.length];
 };
 
-// タグごとに色を割り当てる関数
-const getTagColor = (tagName) => {
-    const tagColors = {
-        '映像': { bg: '#dbeafe', text: '#1e40af' }, // blue
-        '音響': { bg: '#dcfce7', text: '#166534' }, // green
-        'マイク': { bg: '#fef3c7', text: '#92400e' }, // amber
-        '学校': { bg: '#e0e7ff', text: '#3730a3' }, // indigo
-        '幼稚園': { bg: '#fce7f3', text: '#9f1239' }, // pink
-        '教育施設': { bg: '#e9d5ff', text: '#6b21a8' }, // purple
-        '教会': { bg: '#cffafe', text: '#155e75' }, // cyan
-        '博物館': { bg: '#fed7aa', text: '#9a3412' }, // orange
-        '結婚式場': { bg: '#fecdd3', text: '#be123c' }, // rose
-        'イベント': { bg: '#c7d2fe', text: '#4338ca' }, // violet
-    };
-
-    return tagColors[tagName] || { bg: '#f3f4f6', text: '#374151' }; // default gray
-};
-
 const CaseCard = ({ caseItem }) => {
     const borderColor = getClientColor(caseItem.client);
 
@@ -67,22 +49,11 @@ const CaseCard = ({ caseItem }) => {
                 <h3 className="client-name">{caseItem.client}</h3>
                 <p className="description">{caseItem.description}</p>
                 <div className="tags">
-                    {caseItem.tags.map((tag, index) => {
-                        const tagColor = getTagColor(tag);
-                        return (
-                            <span
-                                key={index}
-                                className="tag"
-                                style={{
-                                    backgroundColor: tagColor.bg,
-                                    color: tagColor.text,
-                                    border: `1px solid ${tagColor.text}30`
-                                }}
-                            >
-                                <Tag size={12} /> {tag}
-                            </span>
-                        );
-                    })}
+                    {caseItem.tags.map((tag, index) => (
+                        <span key={index} className="tag">
+                            <Tag size={12} /> {tag}
+                        </span>
+                    ))}
                 </div>
             </div>
         </motion.div>
