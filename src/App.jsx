@@ -31,6 +31,7 @@ function App() {
             transition={{ duration: 0.8 }}
             className="hero-content"
           >
+            <div className="brand-name">earthcommunication.</div>
             <h1>2025年 施工事例</h1>
             <p>学校・教育機関における音響・映像設備の導入実績をご紹介します。</p>
           </motion.div>
